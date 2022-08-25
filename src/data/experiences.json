@@ -1,0 +1,61 @@
+{
+  "success": true,
+  "experience": [
+    {
+      "id": "0",
+      "title": "Bootcamp - Front-end Developer",
+      "company": "Adalab",
+      "date": "FEB 2022 - MAY 2022",
+      "paragraph": "Programa de formación integral e intensivo en desarrollo web Frontend (con nociones de Backend):\n\n- Maquetación responsive: HTML5, CSS3, SCSS (Sass), Flexbox, CSS Grid, animaciones.\n- Programación front: JavaScript (ES6) y servicios web (APIs) de terceros.\n- Creación de SPAs con React JS.\n- Control de versiones con Git (GitHub).\n- Programación back: Aplicaciones con Node JS, Express y SQL (SQLite).\n- Herramientas de desarrollo: VS Code, Terminal, Gulp, Linter, NPM, DevTools, Zeplin, Postman, SQLite Browser.\n- Desarrollo de proyecto usando filosofía Agile y marco de trabajo SCRUM.\n- Herramientas de comunicación y trabajo en equipo: Slack, GitHub, Zoom."
+    },
+    {
+      "id": "1",
+      "title": "Técnico Especialista III / TCAE",
+      "company": "C. Madrid",
+      "date": "JUL 2020 - JUN 2021",
+      "paragraph": "Atención a las necesidades del alumnado con necesidades educativas especiales en el colegio Pedro Muñoz Seca. / Atención integral y cuidado de personas mayores en la residencia Francisco de Vitoria."
+    },
+    {
+      "id": "2",
+      "title": "Formadora en diseño para empresas",
+      "company": "Sophos",
+      "date": "ENE 2020 - MAR 2020",
+      "paragraph": "Formación a grupos de empleados de empresas del sector, en Diseño UX/UI."
+    },
+    {
+      "id": "3",
+      "title": "UX & Visual designer",
+      "company": "Agencia B12",
+      "date": "ENE 2020 - MAY 2020",
+      "paragraph": "- Diseño de creatividades para campañas digitales de grandes marcas, rediseño y mejora de: landings, banners, mailing, así como adaptación de materiales y recursos a distintas RRSS.\n- Creación de animaciones en banners y creatividades.\n- Retoque fotográfico y edición de vídeo."
+    },
+    {
+      "id": "4",
+      "title": "CPO - Chief Product Officer",
+      "company": "Nekuno",
+      "date": "ABR 2019 - DIC 2019",
+      "paragraph": "- Coordinación del equipo técnico y de diseño.\n- Rediseño UX/UI, adaptación y actualización de la App Nekuno."
+    },
+    {
+      "id": "5",
+      "title": "Profesora de ciencias e informática",
+      "company": "Sophos",
+      "date": "FEB 2008 - MAR 2020",
+      "paragraph": "- Clases de informática y ciencias puras en academias y empresas\n- Clases particulares"
+    },
+    {
+      "id": "6",
+      "title": "Especialista en Apple Store Puerta del Sol",
+      "company": "Apple",
+      "date": "JUN 2017 - SEP 2017",
+      "paragraph": "Atención y asesoramiento al cliente, conectando mediante la escucha activa para facilitar una experiencia personalizada y adecuada a sus necesidades"
+    },
+    {
+      "id": "7",
+      "title": "Cofundadora / Directora de arte",
+      "company": "Yeeply",
+      "date": "JUN 2012 - FEB 2013",
+      "paragraph": "- Cofundadora y Directora de arte\n- Diseño y desarrollo del portal web - Branding de la compañía"
+    }
+  ]
+}

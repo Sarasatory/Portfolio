@@ -1,0 +1,40 @@
+@import '../core/Variables.scss';
+
+.section007 {
+  position: relative;
+
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url(../../images/bg/slice7.webp);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  & .container {
+    position: relative;
+    padding: 16rem;
+
+    width: $width_mobile;
+    max-width: $max_width_mobile;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40rem;
+
+    @media (min-width: $break_point_tablet) {
+      width: $width_tablet;
+      max-width: $max_width_tablet;
+
+      justify-content: flex-start;
+    }
+    @media (min-width: $break_point_desktop) {
+      width: $width_desktop;
+      max-width: $max_width_desktop;
+    }
+  }
+}

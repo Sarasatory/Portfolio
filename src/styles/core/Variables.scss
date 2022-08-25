@@ -1,0 +1,40 @@
+// FONTS
+$font_w_light: 300;
+$font_w_regular: 400;
+$font_w_medium: 500;
+
+// COLORS
+$col_white: #fff; // White
+$col_white_30: rgba(255, 255, 255, 0.3); // White 30%
+$col_white_50: rgba(255, 255, 255, 0.5); // White 50%
+$col_white_60: rgba(255, 255, 255, 0.6); // White 60%
+$col_white_80: rgba(255, 255, 255, 0.8); // White 80%
+
+$col_grey: #667883; // Grey
+
+$col_black: #000; // Black
+$col_black_30: rgba(0, 0, 0, 0.3); // Black 30%
+$col_black_50: rgba(0, 0, 0, 0.5); // Black 50%
+$col_black_80: rgba(0, 0, 0, 0.8); // Black 80%
+$col_black_90: rgba(0, 0, 0, 0.9); // Black 90%
+
+$col_orange_light: #ffa24b; // Orange Light
+$col_orange_light_30: rgba(255, 162, 75, 0.3); // Orange Light 30%
+$col_orange_light_50: rgba(255, 162, 75, 0.5); // Orange Light 50%
+$col_orange_light_60: rgba(255, 162, 75, 0.6); // Orange Light 60%
+
+$col_orange_dark: #ee7d14; // Orange Dark
+$col_orange_dark_50: rgba(238, 125, 20, 0.5); // Orange Dark 50%
+
+// SIZES
+
+$break_point_tablet: 800px;
+$break_point_desktop: 1100px;
+
+$max_width_mobile: 500px; // Min: 360px
+$max_width_tablet: 900px; // Min: 560px
+$max_width_desktop: 1200px; // Min: 860px
+
+$width_mobile: 100%;
+$width_tablet: calc(100% - 80rem);
+$width_desktop: calc(100% - 240rem);

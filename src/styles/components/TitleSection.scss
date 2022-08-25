@@ -1,0 +1,43 @@
+@import '../core/Variables.scss';
+
+.title-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & .number {
+    font-size: 56rem;
+    line-height: 56rem;
+    font-weight: $font_w_light;
+
+    color: $col_orange_light_50;
+
+    @media (min-width: $break_point_tablet) {
+      font-size: 64rem;
+      line-height: 64rem;
+    }
+    @media (min-width: $break_point_desktop) {
+      font-size: 72rem;
+      line-height: 72rem;
+    }
+  }
+
+  & .title {
+    font-size: 32rem;
+    line-height: 32rem;
+    font-weight: $font_w_light;
+
+    color: $col_black;
+
+    transform: translate(-20rem);
+
+    @media (min-width: $break_point_tablet) {
+      font-size: 40rem;
+      line-height: 40rem;
+    }
+    @media (min-width: $break_point_desktop) {
+      font-size: 48rem;
+      line-height: 48rem;
+    }
+  }
+}

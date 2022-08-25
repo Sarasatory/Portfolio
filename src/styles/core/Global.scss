@@ -1,0 +1,671 @@
+// Saltos de línea con "\n" en el texto del objeto JSON.
+.white-space-jump {
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -o-pre-wrap;
+}
+
+// Clase "hidden".
+.hidden {
+  display: none;
+}
+
+.dblock {
+  display: block;
+}
+
+.rotate90 {
+  transform: rotate(90deg);
+}
+.rotate-90 {
+  transform: rotate(-90deg);
+}
+
+//
+// TEXTOS
+//
+.title-h1 {
+  &.header {
+    margin-bottom: 10rem;
+
+    font-size: 45rem;
+    font-weight: $font_w_light;
+    line-height: 45rem;
+
+    @media (min-width: $break_point_tablet) {
+      margin-bottom: 16rem;
+      font-size: 72rem;
+      line-height: 80rem;
+    }
+    @media (min-width: $break_point_desktop) {
+      margin-bottom: 24rem;
+      font-size: 110rem;
+      line-height: 110rem;
+    }
+  }
+}
+
+.title-h2 {
+  @media (min-width: $break_point_tablet) {
+  }
+  @media (min-width: $break_point_desktop) {
+  }
+
+  &.header {
+    font-size: 16rem;
+    font-weight: $font_w_medium;
+    line-height: 16rem;
+
+    @media (min-width: $break_point_tablet) {
+      font-size: 22rem;
+      line-height: 22rem;
+    }
+    @media (min-width: $break_point_desktop) {
+      font-size: 26rem;
+      line-height: 26rem;
+    }
+
+    & .span {
+      display: inline-block;
+
+      letter-spacing: 4rem;
+      line-height: 24rem;
+
+      @media (min-width: $break_point_tablet) {
+        letter-spacing: 6rem;
+        line-height: 30rem;
+      }
+      @media (min-width: $break_point_desktop) {
+        line-height: 40rem;
+      }
+    }
+
+    & .span-left {
+      text-align: right;
+      max-width: 14ex;
+    }
+
+    & .span-center {
+      margin: 0 16rem;
+
+      display: inline-block;
+
+      text-align: center;
+
+      font-size: 48rem;
+      font-weight: $font_w_regular;
+      line-height: 48rem;
+
+      transform: translateY(-2rem);
+
+      @media (min-width: $break_point_tablet) {
+        margin: 0 24rem;
+
+        font-size: 56rem;
+        line-height: 56rem;
+
+        transform: translateY(-6rem);
+      }
+      @media (min-width: $break_point_desktop) {
+        margin: 0 30rem;
+
+        font-size: 64rem;
+        line-height: 64rem;
+
+        transform: translateY(-10rem);
+      }
+    }
+    & .span-right {
+      text-align: left;
+      max-width: 12ex;
+    }
+  }
+}
+
+.title-h3 {
+  margin-bottom: 24rem;
+
+  font-size: 28rem;
+
+  @media (min-width: $break_point_tablet) {
+    font-size: 32rem;
+  }
+  @media (min-width: $break_point_desktop) {
+    font-size: 36rem;
+  }
+  &.profile {
+    font-weight: $font_w_regular;
+  }
+  &.experience,
+  &.articles {
+    font-weight: $font_w_medium;
+    margin-bottom: 6rem;
+    font-size: 20rem;
+
+    @media (min-width: $break_point_tablet) {
+      margin-bottom: 8rem;
+      font-size: 24rem;
+    }
+    @media (min-width: $break_point_desktop) {
+      font-size: 28rem;
+    }
+  }
+  &.work {
+    margin: 0;
+
+    font-weight: $font_w_regular;
+
+    @media (min-width: $break_point_tablet) {
+    }
+    @media (min-width: $break_point_desktop) {
+      position: absolute;
+
+      width: 20ex;
+
+      display: flex;
+      justify-content: center;
+
+      font-size: 36rem;
+    }
+  }
+
+  &.contact {
+    font-size: 32rem;
+    font-weight: $font_w_regular;
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    @media (min-width: $break_point_tablet) {
+      font-size: 36rem;
+    }
+    @media (min-width: $break_point_desktop) {
+      font-size: 40rem;
+    }
+  }
+}
+
+.title-h4 {
+  &.work {
+    margin-bottom: 16rem;
+
+    font-size: 20rem;
+    font-weight: $font_w_regular;
+
+    text-align: center;
+
+    @media (min-width: $break_point_tablet) {
+      font-size: 24rem;
+    }
+    @media (min-width: $break_point_desktop) {
+      font-size: 28rem;
+    }
+  }
+}
+
+.title-h5 {
+  &.work {
+    display: none;
+
+    @media (min-width: $break_point_tablet) {
+      margin-bottom: 10rem;
+
+      display: inline-block;
+
+      font-size: 16rem;
+      font-weight: $font_w_light;
+      line-height: 16rem;
+    }
+    @media (min-width: $break_point_desktop) {
+      margin-bottom: 12rem;
+
+      font-size: 18rem;
+      line-height: 18rem;
+    }
+  }
+}
+
+.text-p {
+  padding-bottom: 16rem;
+
+  font-size: 14rem;
+  font-weight: $font_w_regular;
+  line-height: 20rem;
+
+  @media (min-width: $break_point_tablet) {
+    font-size: 14rem;
+    line-height: 22rem;
+  }
+  @media (min-width: $break_point_desktop) {
+    font-size: 16rem;
+    line-height: 24rem;
+  }
+
+  &.quote {
+    display: none;
+
+    @media (min-width: $break_point_tablet) {
+      display: block;
+
+      width: 350rem;
+      padding: 8rem;
+
+      position: absolute;
+      bottom: 32%;
+      right: 0;
+    }
+    @media (min-width: $break_point_desktop) {
+      bottom: 20%;
+    }
+  }
+
+  &.subtitle {
+    color: $col_grey;
+    @media (min-width: $break_point_tablet) {
+    }
+    @media (min-width: $break_point_desktop) {
+    }
+  }
+
+  &.experience {
+    margin-top: 10rem;
+    font-weight: $font_w_regular;
+    font-size: 14rem;
+
+    margin-top: 20rem;
+    @media (min-width: $break_point_tablet) {
+      font-size: 16rem;
+    }
+    @media (min-width: $break_point_desktop) {
+      margin-top: 30rem;
+      font-size: 18rem;
+    }
+  }
+
+  &.work {
+    text-align: center;
+  }
+
+  &.view-more-projects {
+    padding: 0;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &.experience-list {
+    padding: 4rem;
+
+    font-weight: $font_w_medium;
+
+    @media (min-width: $break_point_tablet) {
+      padding: 8rem;
+    }
+    @media (min-width: $break_point_desktop) {
+    }
+  }
+
+  &.contact {
+    font-weight: $font_w_regular;
+    font-size: 18rem;
+
+    text-align: center;
+    @media (min-width: $break_point_tablet) {
+      font-size: 22rem;
+    }
+    @media (min-width: $break_point_desktop) {
+      font-size: 26rem;
+    }
+
+    &--email {
+      text-align: center;
+      font-size: 24rem;
+
+      @media (min-width: $break_point_tablet) {
+        font-size: 28rem;
+      }
+      @media (min-width: $break_point_desktop) {
+        font-size: 32rem;
+      }
+    }
+  }
+}
+
+.text-span {
+  margin: 0 0 2rem 2rem;
+
+  @media (min-width: $break_point_tablet) {
+    margin: 0 0 4rem 4rem;
+  }
+  @media (min-width: $break_point_desktop) {
+    margin: 0 0 4rem 6rem;
+  }
+
+  &.header {
+    font-size: 14rem;
+    font-weight: $font_w_regular;
+    line-height: 14rem;
+  }
+}
+
+.skills-title {
+  font-size: 20rem;
+  @media (min-width: $break_point_tablet) {
+    font-size: 24rem;
+  }
+  @media (min-width: $break_point_desktop) {
+    font-size: 28rem;
+  }
+}
+
+.skills-line {
+  padding: 0 10rem 8rem 10rem;
+
+  font-size: 14rem;
+  font-weight: $font_w_regular;
+  line-height: 14rem;
+  @media (min-width: $break_point_tablet) {
+    padding: 0 12rem 8rem 12rem;
+  }
+  @media (min-width: $break_point_desktop) {
+    padding: 0 14rem 8rem 14rem;
+
+    font-size: 16rem;
+    line-height: 16rem;
+  }
+}
+
+.skills-tag {
+  padding: 0 10rem;
+
+  display: inline-block;
+
+  font-size: 16rem;
+  font-weight: $font_w_regular;
+  line-height: normal;
+
+  background-image: linear-gradient(
+    120deg,
+    $col_orange_light_30 0%,
+    $col_orange_light_30 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 100% 0.7em;
+  background-position: 0 88%;
+
+  @media (min-width: $break_point_tablet) {
+    padding: 0 12rem;
+  }
+  @media (min-width: $break_point_desktop) {
+    padding: 0 14rem;
+  }
+}
+
+.skill-tag-work {
+  padding: 0 10rem;
+
+  display: inline-block;
+
+  font-size: 16rem;
+  font-weight: $font_w_regular;
+  line-height: normal;
+
+  background-image: linear-gradient(
+    120deg,
+    $col_orange_light_30 0%,
+    $col_orange_light_30 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 100% 0.7em;
+  background-position: 0 88%;
+
+  @media (min-width: $break_point_desktop) {
+    width: auto;
+    height: 28rem;
+    padding: 4rem 8rem;
+    margin: 4rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 14rem;
+    font-weight: $font_w_light;
+
+    background-image: none;
+    background-color: $col_white_30;
+    border-radius: 16rem;
+  }
+}
+
+//
+// TEXTOS RESALTADOS
+//
+
+.strong {
+  font-weight: $font_w_medium;
+}
+
+.strong-color {
+  background-image: linear-gradient(
+    120deg,
+    $col_orange_light 0%,
+    $col_orange_dark 100%
+  );
+  background-clip: text;
+  color: transparent;
+}
+
+.strong-color-light {
+  font-weight: $font_w_light;
+  color: $col_orange_light;
+}
+
+.underline-color-deg {
+  background-image: linear-gradient(
+    120deg,
+    $col_orange_light_50 0%,
+    $col_orange_dark_50 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 100% 0.5em;
+  background-position: 0 87%;
+
+  @media (min-width: $break_point_tablet) {
+    padding: 0 4rem;
+    margin-left: -4rem;
+  }
+  @media (min-width: $break_point_desktop) {
+    padding: 0 8rem;
+    margin-left: -8rem;
+  }
+}
+
+//
+// BOTONES
+//
+
+.btnIcon {
+  width: 18rem;
+  height: 18rem;
+
+  color: $col_orange_light;
+
+  @media (min-width: $break_point_tablet) {
+  }
+  @media (min-width: $break_point_desktop) {
+  }
+}
+
+.btn-view-more-project {
+  width: auto;
+
+  height: 40rem;
+  padding: 8rem 16rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+
+  font-size: 16rem;
+  font-weight: $font_w_light;
+  color: $col_orange_light;
+
+  // border: 2rem solid $col_orange_light_30;
+  border-radius: 20rem;
+
+  transition: all 0.35s ease;
+
+  @media (min-width: $break_point_desktop) {
+    margin-top: 16rem;
+    color: $col_white;
+    border: 2rem solid $col_white_30;
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    @media (min-width: $break_point_desktop) {
+      border: 2rem solid $col_white_50;
+    }
+  }
+}
+
+.btn-view-more-work,
+.btn-view-more-article {
+  width: auto;
+
+  height: 40rem;
+  padding: 8rem 24rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+
+  font-size: 16rem;
+  font-weight: $font_w_light;
+
+  border: 2rem solid $col_orange_light_30;
+  border-radius: 20rem;
+
+  transition: all 0.35s ease;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $col_orange_light_30;
+    border: 2rem solid $col_orange_light_50;
+  }
+}
+
+//
+// IMÁGENES DE LOS PROYECTOS DE DESARROLLO
+//
+
+.csi {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.csi-dev-001 {
+  background-image: url(../../images/projects/005.png);
+}
+
+.csi-dev-002 {
+  background-image: url(../../images/projects/006.png);
+}
+
+.csi-dev-003 {
+  background-image: url(../../images/projects/007.png);
+}
+
+.csi-dev-004 {
+  background-image: url(../../images/projects/008.png);
+}
+
+.csi-dev-005 {
+  background-image: url(../../images/projects/005.png);
+}
+
+.csi-dev-006 {
+  background-image: url(../../images/projects/006.png);
+}
+
+.csi-dev-007 {
+  background-image: url(../../images/projects/007.png);
+}
+
+.csi-dev-008 {
+  background-image: url(../../images/projects/008.png);
+}
+
+//
+// IMÁGENES DE LOS PROYECTOS DE DISEÑO
+//
+
+.csi-des-001 {
+  background-image: url(../../images/projects/005.png);
+}
+
+.csi-des-002 {
+  background-image: url(../../images/projects/006.png);
+}
+
+//
+// IMÁGENES DE LOS ARTÍCULOS
+//
+
+.csi-art-001 {
+  background-image: url(../../images/articles/001.jpg);
+}
+
+.csi-art-002 {
+  background-image: url(../../images/articles/002.jpg);
+}
+
+//
+// ICONOS DE LOS BOTONES
+//
+
+.iconBtn {
+  width: 24rem;
+  height: 24rem;
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  @media (min-width: $break_point_desktop) {
+  }
+}
+
+.iconLink {
+  width: 18rem;
+  height: 18rem;
+
+  background-image: url(../../images/icons/linkOrange.svg);
+
+  @media (min-width: $break_point_desktop) {
+    width: 20rem;
+    height: 20rem;
+    background-image: url(../../images/icons/linkWhite.svg);
+  }
+}
+
+.iconGithub {
+  background-image: url(../../images/icons/github.svg);
+}
+
+.iconBehance {
+  background-image: url(../../images/icons/behance.svg);
+}
+
+.iconMenuSat {
+  width: 60rem;
+  height: 60rem;
+
+  background-image: url(../../images/icons/menuSat.svg);
+}

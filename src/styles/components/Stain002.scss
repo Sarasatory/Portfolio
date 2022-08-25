@@ -1,0 +1,26 @@
+@import '../core/Variables.scss';
+
+.stain002 {
+  position: absolute;
+
+  width: 100vw;
+  height: 130vh;
+
+  top: 300vh;
+  left: 0;
+
+  background-image: url(../../images/stains/stain2.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: contain;
+
+  @media (min-width: $break_point_tablet) {
+    height: 175vh;
+
+    transform: translate(0, -10%);
+
+    background-position: left top;
+  }
+  @media (min-width: $break_point_desktop) {
+  }
+}

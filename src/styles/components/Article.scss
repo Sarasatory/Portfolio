@@ -1,0 +1,55 @@
+@import '../core/Variables.scss';
+
+.article {
+  &__sec-001 {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20rem;
+
+    @media (min-width: $break_point_tablet) {
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    @media (min-width: $break_point_desktop) {
+    }
+
+    &__col-001 {
+      min-width: 180rem;
+      min-height: 180rem;
+
+      border-radius: 50%;
+      @media (min-width: $break_point_tablet) {
+        min-width: 200rem;
+        min-height: 200rem;
+      }
+      @media (min-width: $break_point_desktop) {
+      }
+    }
+
+    &__col-002 {
+      width: 100%;
+      padding: 16rem;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20rem;
+
+      text-align: center;
+
+      @media (min-width: $break_point_tablet) {
+        align-items: flex-start;
+        // transform: translate(-60rem);
+
+        text-align: left;
+      }
+      @media (min-width: $break_point_desktop) {
+      }
+    }
+  }
+}

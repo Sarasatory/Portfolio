@@ -1,0 +1,257 @@
+@import '../core/Variables.scss';
+
+.section002 {
+  position: relative;
+
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url(../../images/bg/slice2.webp);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+  & .container {
+    position: relative;
+
+    width: $width_mobile;
+    max-width: $max_width_mobile;
+    padding: 16rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: $break_point_tablet) {
+      width: $width_tablet;
+      max-width: $max_width_tablet;
+    }
+    @media (min-width: $break_point_desktop) {
+      width: $width_desktop;
+      max-width: $max_width_desktop;
+
+      flex-direction: row-reverse;
+      // justify-content: flex-start;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__sec-001 {
+      max-width: 600rem;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 40rem;
+    }
+
+    &__sec-002 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &__circles {
+        width: 300rem;
+        height: 265rem;
+
+        position: relative;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media (min-width: $break_point_tablet) {
+          width: 360rem;
+          height: 325rem;
+        }
+        @media (min-width: $break_point_desktop) {
+          width: 420rem;
+          height: 400rem;
+
+          justify-content: flex-start;
+        }
+
+        & .img-profile {
+          width: 225rem;
+          height: 225rem;
+
+          position: absolute;
+
+          border-radius: 50%;
+
+          background-image: url(../../images/profile/profile.jpg);
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center center;
+
+          transition: all 0.55s ease;
+
+          @media (min-width: $break_point_tablet) {
+            width: 275rem;
+            height: 275rem;
+          }
+          @media (min-width: $break_point_desktop) {
+            width: 325rem;
+            height: 325rem;
+          }
+        }
+
+        & .circle-001 {
+          width: 235rem;
+          height: 235rem;
+
+          position: absolute;
+          transform: translate(11%, -6%);
+
+          border-radius: 50%;
+          border: 2rem solid $col_white;
+
+          transition: all 0.35s ease;
+
+          &.center {
+            background-color: $col_white;
+
+            width: 225rem;
+            height: 225rem;
+
+            transform: translate(0, 0);
+          }
+
+          @media (min-width: $break_point_tablet) {
+            width: 290rem;
+            height: 290rem;
+
+            &.center {
+              background-color: $col_white;
+
+              width: 275rem;
+              height: 275rem;
+
+              transform: translate(0, 0);
+            }
+          }
+
+          @media (min-width: $break_point_desktop) {
+            width: 345rem;
+            height: 345rem;
+
+            &.center {
+              background-color: $col_white;
+
+              width: 325rem;
+              height: 325rem;
+
+              transform: translate(0, 0);
+            }
+          }
+        }
+
+        & .circle-002 {
+          width: 225rem;
+          height: 225rem;
+
+          position: absolute;
+
+          transform: translate(5.5%, 8%);
+
+          border-radius: 50%;
+          border: 2rem solid $col_white_60;
+
+          transition: all 0.5s ease;
+
+          &.center {
+            background-color: $col_white;
+
+            width: 225rem;
+            height: 225rem;
+
+            transform: translate(0, 0);
+          }
+
+          @media (min-width: $break_point_tablet) {
+            width: 275rem;
+            height: 275rem;
+
+            &.center {
+              background-color: $col_white;
+
+              width: 275rem;
+              height: 275rem;
+
+              transform: translate(0, 0);
+            }
+          }
+          @media (min-width: $break_point_desktop) {
+            width: 325rem;
+            height: 325rem;
+
+            &.center {
+              background-color: $col_white;
+
+              width: 325rem;
+              height: 325rem;
+
+              transform: translate(0, 0);
+            }
+          }
+        }
+
+        & .circle-003 {
+          width: 195rem;
+          height: 195rem;
+
+          position: absolute;
+
+          transform: translate(-15%, -13%);
+
+          border-radius: 50%;
+          border: 2rem solid $col_white_30;
+
+          transition: all 0.55s ease;
+
+          &.center {
+            background-color: $col_white;
+
+            width: 229rem;
+            height: 229rem;
+
+            transform: translate(0, 0);
+          }
+
+          @media (min-width: $break_point_tablet) {
+            width: 225rem;
+            height: 225rem;
+
+            &.center {
+              background-color: $col_white;
+
+              width: 279rem;
+              height: 279rem;
+
+              transform: translate(0, 0);
+            }
+          }
+
+          @media (min-width: $break_point_desktop) {
+            width: 275rem;
+            height: 275rem;
+
+            &.center {
+              background-color: $col_white;
+
+              width: 329rem;
+              height: 329rem;
+
+              transform: translate(0, 0);
+            }
+          }
+        }
+      }
+    }
+  }
+}

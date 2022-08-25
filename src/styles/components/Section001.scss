@@ -1,0 +1,57 @@
+@import '../core/Variables.scss';
+
+.section001 {
+  position: relative;
+
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  // overflow: hidden;
+
+  background-image: url(../../images/bg/slice1.webp);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+  & .container {
+    position: relative;
+
+    width: $width_mobile;
+    max-width: $max_width_mobile;
+    min-height: 100vh;
+    padding: 16rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: $break_point_tablet) {
+      width: $width_tablet;
+      max-width: $max_width_tablet;
+
+      justify-content: flex-start;
+    }
+    @media (min-width: $break_point_desktop) {
+      width: $width_desktop;
+      max-width: $max_width_desktop;
+    }
+
+    & .text-aling {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+
+      @media (min-width: $break_point_tablet) {
+        padding-top: 26vh;
+      }
+
+      @media (min-width: $break_point_desktop) {
+        padding-top: 30vh;
+      }
+    }
+  }
+}

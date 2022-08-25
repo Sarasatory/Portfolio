@@ -1,0 +1,264 @@
+@import '../core/Variables.scss';
+
+.menu-btn {
+  position: fixed;
+  right: 20rem;
+  bottom: 20rem;
+  z-index: 200;
+
+  width: 50rem;
+  height: 50rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: all 0.5s ease;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  @media (min-width: $break_point_desktop) {
+    display: none;
+  }
+
+  &__icon {
+    font-size: 24rem;
+    color: $col_white;
+  }
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  z-index: 200;
+
+  width: 80%;
+  height: 100vh;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+
+  background-color: $col_white_80;
+  backdrop-filter: blur(5px);
+
+  @media (min-width: $break_point_tablet) {
+  }
+  @media (min-width: $break_point_desktop) {
+    // *******
+    width: auto;
+    height: auto;
+    padding: 0;
+
+    background-color: transparent;
+    backdrop-filter: blur(0);
+
+    border-radius: 0;
+    // *******
+    position: fixed;
+    top: 50%;
+    right: 0;
+
+    transform: translate(0, -50%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    transition: all 0.5s ease;
+    padding: 8rem;
+  }
+
+  & ul {
+    width: 100%;
+    padding-bottom: 60rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: inherit;
+
+    @media (min-width: $break_point_tablet) {
+    }
+    @media (min-width: $break_point_desktop) {
+      padding-bottom: 0;
+    }
+
+    & li {
+      padding-right: 20rem;
+
+      @media (min-width: $break_point_tablet) {
+      }
+
+      @media (min-width: $break_point_desktop) {
+        padding-right: 0;
+      }
+
+      & a {
+        padding: 8rem;
+
+        margin: 4rem 0;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        opacity: 1;
+
+        // color: $col_white;
+        color: $col_black;
+
+        @media (min-width: $break_point_tablet) {
+          color: $col_black;
+        }
+
+        &.inactive {
+          transition: all 0.35s ease;
+
+          @media (min-width: $break_point_desktop) {
+            opacity: 0.5;
+          }
+          & .number {
+            width: 24rem;
+            margin-right: 8rem;
+
+            display: flex;
+            justify-content: center;
+
+            font-size: 24rem;
+            color: $col_orange_light;
+
+            @media (min-width: $break_point_desktop) {
+              font-size: 18rem;
+            }
+          }
+
+          & .title {
+            font-size: 18rem;
+            @media (min-width: $break_point_desktop) {
+              font-size: 14rem;
+            }
+          }
+
+          &:hover {
+            cursor: pointer;
+            @media (min-width: $break_point_desktop) {
+              opacity: 1;
+            }
+          }
+        }
+
+        &.active {
+          opacity: 1;
+          transition: all 0.35s ease;
+
+          & .number {
+            width: 24rem;
+            margin-right: 8rem;
+
+            display: flex;
+            justify-content: center;
+
+            font-size: 24rem;
+
+            color: $col_orange_light;
+
+            @media (min-width: $break_point_desktop) {
+              font-size: 18rem;
+            }
+          }
+
+          & .title {
+            font-size: 18rem;
+            color: $col_orange_light;
+            @media (min-width: $break_point_desktop) {
+              font-size: 14rem;
+            }
+          }
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+.unfloat {
+  display: none;
+
+  right: -105vw;
+
+  animation-name: closed-nav;
+  animation-duration: 0.35s;
+  animation-direction: normal;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
+  @media (min-width: $break_point_tablet) {
+    // right: -88rem;
+  }
+  @media (min-width: $break_point_desktop) {
+    padding: 8rem;
+
+    right: -96rem;
+
+    display: flex;
+
+    animation: none;
+  }
+}
+.float {
+  right: 0;
+
+  animation-name: open-nav;
+  animation-duration: 0.35s;
+  animation-direction: normal;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
+  @media (min-width: $break_point_tablet) {
+  }
+  @media (min-width: $break_point_desktop) {
+    animation: none;
+    right: 0;
+    color: $col_black;
+  }
+}
+
+@keyframes closed-nav {
+  0% {
+    right: 0;
+    opacity: 100;
+    display: flex;
+  }
+
+  100% {
+    right: -105vw;
+    opacity: 0;
+    display: none;
+  }
+}
+
+@keyframes open-nav {
+  0% {
+    right: -105vw;
+    opacity: 0;
+    display: none;
+  }
+
+  100% {
+    right: 0;
+    opacity: 100;
+    display: flex;
+  }
+}

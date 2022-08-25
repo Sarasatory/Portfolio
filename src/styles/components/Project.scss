@@ -1,0 +1,96 @@
+@import '../core/Variables.scss';
+
+.project {
+  width: 100%;
+  max-width: 250rem;
+
+  @media (min-width: $break_point_tablet) {
+  }
+  @media (min-width: $break_point_desktop) {
+    position: relative;
+
+    width: 300rem;
+    max-width: 300rem;
+    height: 390rem;
+    margin-bottom: 0;
+  }
+
+  & .classSrcImg {
+    width: 100%;
+    height: 160rem;
+
+    transition: all 0.35s ease;
+
+    @media (min-width: $break_point_tablet) {
+    }
+    @media (min-width: $break_point_desktop) {
+      position: absolute;
+
+      width: 300rem;
+      max-width: 300rem;
+      height: 390rem;
+    }
+  }
+
+  & .info {
+    width: 100%;
+
+    padding: 20rem 16rem 10rem 16rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transition: all 0.35s ease;
+
+    @media (min-width: $break_point_tablet) {
+    }
+    @media (min-width: $break_point_desktop) {
+      position: absolute;
+
+      width: 300rem;
+      max-width: 300rem;
+      height: 390rem;
+
+      gap: 10rem;
+
+      color: $col_white;
+
+      background-color: transparent;
+      opacity: 0;
+    }
+
+    &-skills {
+      width: 100%;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      @media (min-width: $break_point_tablet) {
+      }
+    }
+  }
+
+  &.hoverJS {
+    @media (min-width: $break_point_desktop) {
+      background-color: $col_black_80;
+    }
+    & .classSrcImg {
+      @media (min-width: $break_point_desktop) {
+        filter: saturate(0%);
+        // transform: scale(1.05);
+      }
+    }
+
+    & .info {
+      @media (min-width: $break_point_desktop) {
+        opacity: 1;
+
+        background-color: $col_black_80;
+      }
+    }
+  }
+}

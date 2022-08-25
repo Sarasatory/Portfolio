@@ -1,0 +1,136 @@
+@import '../core/Variables.scss';
+
+.section005 {
+  position: relative;
+
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url(../../images/bg/slice5.webp);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+  & .container {
+    position: relative;
+    padding: 16rem;
+
+    width: $width_mobile;
+    max-width: $max_width_mobile;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-row-gap: 40rem;
+
+    @media (min-width: $break_point_tablet) {
+      width: $width_tablet;
+      max-width: $max_width_tablet;
+
+      justify-content: flex-start;
+    }
+    @media (min-width: $break_point_desktop) {
+      width: $width_desktop;
+      max-width: $max_width_desktop;
+
+      align-items: flex-start;
+    }
+
+    &__sec-001 {
+      width: 100%;
+
+      display: flex;
+      justify-content: flex-start;
+    }
+    &__sec-002 {
+      width: 100%;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 40rem;
+
+      @media (min-width: $break_point_tablet) {
+        flex-direction: row;
+      }
+      @media (min-width: $break_point_desktop) {
+        justify-content: flex-start;
+        align-items: flex-start;
+        max-width: 760rem;
+      }
+
+      &--col-001 {
+        display: flex;
+        @media (min-width: $break_point_tablet) {
+          width: 100%;
+          max-width: 270rem;
+        }
+        @media (min-width: $break_point_desktop) {
+          flex-direction: row;
+          width: 100%;
+          max-width: 360rem;
+        }
+      }
+
+      &--col-002 {
+        display: flex;
+
+        @media (min-width: $break_point_tablet) {
+          width: 100%;
+          max-width: 270rem;
+        }
+        @media (min-width: $break_point_desktop) {
+          flex-direction: row;
+          width: 100%;
+          max-width: 360rem;
+        }
+      }
+
+      & .sub-text {
+        display: none;
+
+        @media (min-width: $break_point_tablet) {
+        }
+        @media (min-width: $break_point_desktop) {
+          position: relative;
+
+          width: 100%;
+          max-width: 60rem;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+
+      & .sub-col {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40rem;
+
+        @media (min-width: $break_point_tablet) {
+        }
+        @media (min-width: $break_point_desktop) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.space-top {
+  @media (min-width: $break_point_tablet) {
+    width: 100%;
+    height: 80rem;
+    min-height: 80rem;
+  }
+  @media (min-width: $break_point_desktop) {
+  }
+}
