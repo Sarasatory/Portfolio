@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500px" height="500px" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>linkWhite</title>
+    <g id="linkWhite" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M272.705136,227 C323.764955,278.127201 323.764955,360.840581 272.705136,411.740251 C221.64565,462.639921 139.042485,462.866453 88.2095631,411.740251 C37.3770073,360.614049 37.150077,277.900003 88.2095631,227" id="Path" stroke="#FFFFFF" stroke-width="49.9986359"></path>
+        <path d="M216.913593,283 C163.695469,229.801152 163.695469,143.410393 216.913593,89.9842352 C270.132051,36.5583106 356.554321,36.7856538 410.001839,89.9842352 C463.446023,143.183083 463.219297,229.573842 410.001839,283" id="Path" stroke="#FFFFFF" stroke-width="49.9986359"></path>
+    </g>
+</svg>
