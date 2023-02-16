@@ -49,9 +49,9 @@ const Section002 = (props) => {
               constantemente.
             </p>
 
-            <p className='text-p strong-color'>
+            {/* <p className='text-p strong-color'>
               Actualmente estoy buscando nuevas oportunidades de empleo.
-            </p>
+            </p> */}
           </div>
         </div>
         <div className='container__sec-002'>

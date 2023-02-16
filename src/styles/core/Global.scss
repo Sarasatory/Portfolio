@@ -24,6 +24,12 @@
 //
 // TEXTOS
 //
+
+::selection {
+  background: $col_orange_light_50; /*Color para el fondo*/
+  color: #fff; /*Color para el texto seleccionado*/
+}
+
 .title-h1 {
   &.header {
     margin-bottom: 10rem;
@@ -572,35 +578,31 @@
 }
 
 .csi-dev-001 {
-  background-image: url(../../images/projects/005.png);
+  background-image: url(../../images/projects/dev-001-m.webp);
+  @media (min-width: $break_point_desktop) {
+    background-image: url(../../images/projects/dev-001-d.webp);
+  }
 }
 
 .csi-dev-002 {
-  background-image: url(../../images/projects/006.png);
+  background-image: url(../../images/projects/dev-002-m.webp);
+  @media (min-width: $break_point_desktop) {
+    background-image: url(../../images/projects/dev-002-d.webp);
+  }
 }
 
 .csi-dev-003 {
-  background-image: url(../../images/projects/007.png);
+  background-image: url(../../images/projects/dev-003-m.webp);
+  @media (min-width: $break_point_desktop) {
+    background-image: url(../../images/projects/dev-003-d.webp);
+  }
 }
 
 .csi-dev-004 {
-  background-image: url(../../images/projects/008.png);
-}
-
-.csi-dev-005 {
-  background-image: url(../../images/projects/005.png);
-}
-
-.csi-dev-006 {
-  background-image: url(../../images/projects/006.png);
-}
-
-.csi-dev-007 {
-  background-image: url(../../images/projects/007.png);
-}
-
-.csi-dev-008 {
-  background-image: url(../../images/projects/008.png);
+  background-image: url(../../images/projects/dev-004-m.webp);
+  @media (min-width: $break_point_desktop) {
+    background-image: url(../../images/projects/dev-004-d.webp);
+  }
 }
 
 //
@@ -608,11 +610,31 @@
 //
 
 .csi-des-001 {
-  background-image: url(../../images/projects/005.png);
+  background-image: url(../../images/projects/des-001-m.webp);
+  @media (min-width: $break_point_desktop) {
+    background-image: url(../../images/projects/des-001-d.webp);
+  }
 }
 
 .csi-des-002 {
-  background-image: url(../../images/projects/006.png);
+  background-image: url(../../images/projects/des-002-m.webp);
+  @media (min-width: $break_point_desktop) {
+    background-image: url(../../images/projects/des-002-d.webp);
+  }
+}
+
+.csi-des-003 {
+  background-image: url(../../images/projects/des-003-m.webp);
+  @media (min-width: $break_point_desktop) {
+    background-image: url(../../images/projects/des-003-d.webp);
+  }
+}
+
+.csi-des-004 {
+  background-image: url(../../images/projects/des-004-m.webp);
+  @media (min-width: $break_point_desktop) {
+    background-image: url(../../images/projects/des-004-d.webp);
+  }
 }
 
 //

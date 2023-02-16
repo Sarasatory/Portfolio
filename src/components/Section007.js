@@ -14,12 +14,10 @@ const Section007 = (props) => {
         </div>
         <div className='container__sec-002'>
           <p className='title-h3 contact'>¿Algún proyecto en mente?</p>
-          <p className='text-p contact'>
-            Cuéntame tu idea y veamos qué podemos crear ^^
-          </p>
-          <p className='text-p contact--email strong-color'>
+          <span className='text-p contact'>Cuéntame tu idea. </span>
+          <span className='text-p contact--email strong-color'>
             <a href='mailto:sarasatorynb@gmail.com'>sarasatorynb@gmail.com</a>
-          </p>
+          </span>
         </div>
       </div>
     </section>

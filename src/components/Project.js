@@ -1,7 +1,7 @@
 import '../styles/components/Project.scss';
 
 const Project = (props) => {
-  // Añado y quito la clase "hoverJS" en función de si el ratón está o no encima de una revisualización de proyecto. Sirve para mostrar la información del mismo.
+  // Añado y quito la clase "hoverJS" en función de si el ratón está o no encima de una previsualización de proyecto. Sirve para mostrar la información del mismo.
   const handleMouseOver = (ev) => {
     let img = document.querySelector('.classSrcImg');
     img.classList.add('hoverJS');
@@ -32,19 +32,19 @@ const Project = (props) => {
       onMouseOut={handleMouseOut}
     >
       <div className={`classSrcImg csi ${props.classSrcImg}`}></div>
-      <div className='info'>
-        <h4 className='title-h4 work'>{props.title}</h4>
-        <p className='text-p work white-space-jump'>{props.description}</p>
+      <a href={`${props.url}`} target='_blank'>
+        <div className='info'>
+          <h4 className='title-h4 work white-space-jump'>{props.title}</h4>
+          <p className='text-p work white-space-jump'>{props.description}</p>
 
-        <p className='info-skills skills-line'>{htmlSkills}</p>
+          <p className='info-skills skills-line'>{htmlSkills}</p>
 
-        <div className='btn-view-more-project'>
-          <div className='iconBtn iconLink'></div>
-          <a href={`${props.url}`} target='_blank'>
+          {/* <div className='btn-view-more-project'>
+            <div className='iconBtn iconLink'></div>
             Ver proyecto
-          </a>
+          </div> */}
         </div>
-      </div>
+      </a>
     </div>
   );
 };

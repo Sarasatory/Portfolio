@@ -4,8 +4,6 @@
   width: 100%;
   max-width: 250rem;
 
-  @media (min-width: $break_point_tablet) {
-  }
   @media (min-width: $break_point_desktop) {
     position: relative;
 
@@ -21,8 +19,6 @@
 
     transition: all 0.35s ease;
 
-    @media (min-width: $break_point_tablet) {
-    }
     @media (min-width: $break_point_desktop) {
       position: absolute;
 
@@ -44,8 +40,6 @@
 
     transition: all 0.35s ease;
 
-    @media (min-width: $break_point_tablet) {
-    }
     @media (min-width: $break_point_desktop) {
       position: absolute;
 
@@ -68,9 +62,6 @@
       flex-direction: row;
       justify-content: center;
       flex-wrap: wrap;
-
-      @media (min-width: $break_point_tablet) {
-      }
     }
   }
 
@@ -81,14 +72,12 @@
     & .classSrcImg {
       @media (min-width: $break_point_desktop) {
         filter: saturate(0%);
-        // transform: scale(1.05);
       }
     }
 
     & .info {
       @media (min-width: $break_point_desktop) {
         opacity: 1;
-
         background-color: $col_black_80;
       }
     }

@@ -49,7 +49,7 @@ const Section005 = (props) => {
           <div className='container__sec-002--col-001'>
             <div className='container__sec-002--col-001 sub-text'>
               <h3 className='title-h3 work strong-color rotate-90'>
-                Desarrollo Front-end
+                Desarrollo Frontend
               </h3>
             </div>
             <div className='container__sec-002--col-001 sub-col'>

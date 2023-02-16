@@ -4,18 +4,34 @@
     {
       "id": "0",
       "classSrcImgDes": "csi-des-001",
-      "title": "Nav-with-intelligent-underlining",
-      "description": "Menú de navegación con subrayado inteligente",
-      "skills": ["HTML", "CSS", "JavaScript", "React"],
-      "url": "https://sarasatory.github.io/Nav-con-subrayado-inteligente/"
+      "title": "Magister\nCase Study",
+      "description": "Proceso básico de design thinking desde el research inicial hasta las pantallas finales.",
+      "skills": ["Research", "Design Thinking", "Style Guides", "Figma"],
+      "url": "https://www.behance.net/gallery/108498531/Magister-Case-Study"
     },
     {
       "id": "1",
       "classSrcImgDes": "csi-des-002",
-      "title": "Título 002",
-      "description": "Descripción 002 Bla bla bla...",
-      "skills": ["HTML", "CSS", "JavaScript"],
-      "url": ""
+      "title": "STAR",
+      "description": "Diseño UX/UI de una App para personas trans.",
+      "skills": ["Research", "Design Thinking", "Style Guides", "Figma"],
+      "url": "https://www.behance.net/gallery/79214839/STAR-App-UXUI"
+    },
+    {
+      "id": "2",
+      "classSrcImgDes": "csi-des-003",
+      "title": "Minus",
+      "description": "Diseño UX/UI de una App que facilita el intercambio de objetos y electrodomésticos en la comunidad.",
+      "skills": ["Research", "Design Thinking", "Style Guides", "Figma"],
+      "url": "https://www.behance.net/gallery/79185403/Minus-App-UXUI"
+    },
+    {
+      "id": "3",
+      "classSrcImgDes": "csi-des-004",
+      "title": "ABC Groceries",
+      "description": "Proyecto de equipo para el diseño UX/UI de la rama e-commerce de una cadena de supermercados.",
+      "skills": ["Research", "Design Thinking", "Style Guides", "Figma"],
+      "url": "https://www.behance.net/gallery/79172145/ABC-Groceries"
     }
   ]
 }
